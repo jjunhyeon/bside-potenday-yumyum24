@@ -30,7 +30,10 @@
 
 ## 🔗 CI / CD 구성도
 
-- 추가 예정
+```mermaid
+flowchart LR
+  ...
+```
 
 ---
 
