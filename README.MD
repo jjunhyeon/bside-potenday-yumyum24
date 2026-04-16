@@ -32,7 +32,12 @@
 
 ```mermaid
 flowchart LR
-  ...
+  A[Developer\ngit push] --> B[GitHub Actions\nBuild & Test]
+  B --> C[Docker Hub\nImage push]
+  C --> D[NCP Server\nDocker pull & run]
+  D --> E[Nginx\nReverse proxy]
+  D --> F[Spring Boot\n컨테이너]
+  F --> G[MariaDB]
 ```
 
 ---
